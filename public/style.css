@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 22px;
+}
+.wrapper {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 4px;
+}
+header {
+  border-bottom: 1px solid #408f9d;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header ul {
+  margin-top: 20px;
+  list-style-type: none;
+}
+header ul li {
+  font-size: 19px;
+  display: inline-block;
+  padding: 0 10px;
+  color: #408f9d;
+  cursor: pointer;
+}
+header ul li.active {
+  font-weight: bolder;
+  color: tomato;
+}
+header ul li:hover {
+  color: tomato;
+}
+.TmtLogo {
+  margin: 5px;
+  width: 100px;
+}
+.content {
+  padding: 10px 0;
+  min-height: 80vh;
+}
+footer {
+  background-color: #408f9d;
+  padding: 5px;
+  min-height: 100px;
+}
+.HomeDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.IntroDiv {
+  width: 60%;
+  text-align: justify;
+  min-height: 80vh;
+}
+.FoundersDiv {
+  width: 38%;
+  min-height: 80vh;
+  background-color: rgb(179, 233, 235);
+  color: darkolivegreen;
+  text-align: center;
+}
+.FoundersDiv table {
+  min-height: 300px;
+  width: 100%;
+  border-spacing: 10px;
+}
+.FoundersDiv table tbody tr #FounderPhoto1 {
+  background-color: white;
+}
+.FoundersDiv table tbody tr #FounderPhoto2 {
+  background-color: white;
+}
