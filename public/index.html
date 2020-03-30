@@ -4,14 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="style.css" type="text/css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <title>Theomotech | Home</title>
   </head>
   <body>
     <div class="jumbotron">
-      <hi
-        style="font-family: Times; font-size: 3rem; color: #408F9D; text-align: center; font-weight: bolder; text-shadow: 0 3px 10px black;"
-        >Theomotech Inc.</hi
-      >
+      <h1 class="jumbotronText" style="">
+        Theomotech Inc.
+      </h1>
     </div>
     <div class="wrapper">
       <div class="container">
@@ -19,17 +29,54 @@
           <div class="headerBackground"></div>
           <div class="logoPostion" style="width: 120px; height: 100%;"></div>
           <img class="TmtLogo" src="images/TmtLogo.png" alt="" />
-          <ul>
-            <li class="active">Home</li>
-            <li>About us</li>
-            <li>Products</li>
-            <li>Services</li>
-            <li>Other</li>
+          <div id="HamburgerMenu" class="MenuIcon">
+            <a id="nav-toggle" href="#"><span></span></a>
+          </div>
+          <ul class="RegularMenu">
+            <li id="HomeLink" class="active">Home</li>
+            <li id="AboutLink">About Us</li>
+            <li id="ProductsLink">Products</li>
+            <li id="ServicesLink">Services</li>
           </ul>
         </header>
         <div class="content">
+          <div class="MainMenu">
+            <img
+              style="background-color: white; width: 90px; margin: 10px; margin-top: -25px; padding: 4px; border: 2px solid #408F9D"
+              src="images/TmtLogo.png"
+              alt=""
+            />
+            <table>
+              <tbody>
+                <tr id="HMBGHomeLink">
+                  <td></td>
+                  <td>
+                    Home
+                  </td>
+                </tr>
+                <tr id="HMBGAboutLink">
+                  <td></td>
+                  <td>
+                    About Us
+                  </td>
+                </tr>
+                <tr id="HMBGProductsLink">
+                  <td></td>
+                  <td>
+                    Products
+                  </td>
+                </tr>
+                <tr id="HMBGServicesLink">
+                  <td></td>
+                  <td>
+                    Services
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <main>
-            <div class="HomeDiv">
+            <div id="Home" class="HomeDiv">
               <div class="IntroDiv">
                 <h3 style="text-align: center; margin: 10px;">Introduction</h3>
                 <p>
@@ -60,6 +107,100 @@
                     </tr>
                   </tbody>
                 </table>
+                <table
+                  style="color:black; font-size: 14px; margin-top: -35px; background-color: white; opacity: 0.7;"
+                >
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p style="color: red;">Theodore Ajiuk</p>
+                        <br />
+                        <p>
+                          At vero eos et accusamus et iusto odio dignissimos
+                          ducimus qui blanditiis praesentium voluptatum deleniti
+                          atque corrupti quos dolores et quas molestias
+                          excepturi
+                        </p>
+                      </td>
+                      <td>
+                        <p style="color: red;">Mohammed Adinan</p>
+                        <br />
+                        <p>
+                          At vero eos et accusamus et iusto odio dignissimos
+                          ducimus qui blanditiis praesentium voluptatum deleniti
+                          atque corrupti quos dolores et quas molestias
+                          excepturi
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div id="AboutUs" class="AboutUsDiv">
+              <div class="AboutUsContent">
+                <h3 style="text-align: center; margin: 10px;">About Us</h3>
+                <p>
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium voluptatum deleniti atque corrupti quos
+                  dolores et quas molestias excepturi sint occaecati cupiditate
+                  non provident, similique sunt in culpa qui officia deserunt
+                  mollitia animi, id est laborum et dolorum fuga. Et harum
+                  quidem rerum facilis est et expedita distinctio. Nam libero
+                  tempore, cum soluta nobis est eligendi optio cumque nihil
+                  impedit quo minus id quod maxime placeat facere possimus,
+                  omnis voluptas assumenda est, omnis dolor repellendus.
+                  Temporibus autem quibusdam et aut officiis debitis aut rerum
+                  necessitatibus saepe eveniet ut et voluptates repudiandae sint
+                  et molestiae non recusandae. Itaque earum rerum hic tenetur a
+                  sapiente delectus, ut aut reiciendis voluptatibus maiores
+                  alias consequatur aut perferendis doloribus asperiores
+                  repellat
+                </p>
+              </div>
+            </div>
+            <div id="Products" class="ProductsDiv">
+              <div class="ProductsContent">
+                <h3 style="text-align: center; margin: 10px;">Products</h3>
+                <p>
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium voluptatum deleniti atque corrupti quos
+                  dolores et quas molestias excepturi sint occaecati cupiditate
+                  non provident, similique sunt in culpa qui officia deserunt
+                  mollitia animi, id est laborum et dolorum fuga. Et harum
+                  quidem rerum facilis est et expedita distinctio. Nam libero
+                  tempore, cum soluta nobis est eligendi optio cumque nihil
+                  impedit quo minus id quod maxime placeat facere possimus,
+                  omnis voluptas assumenda est, omnis dolor repellendus.
+                  Temporibus autem quibusdam et aut officiis debitis aut rerum
+                  necessitatibus saepe eveniet ut et voluptates repudiandae sint
+                  et molestiae non recusandae. Itaque earum rerum hic tenetur a
+                  sapiente delectus, ut aut reiciendis voluptatibus maiores
+                  alias consequatur aut perferendis doloribus asperiores
+                  repellat
+                </p>
+              </div>
+            </div>
+            <div id="Services" class="ServicesDiv">
+              <div class="ServicesContent">
+                <h3 style="text-align: center; margin: 10px;">Services</h3>
+                <p>
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium voluptatum deleniti atque corrupti quos
+                  dolores et quas molestias excepturi sint occaecati cupiditate
+                  non provident, similique sunt in culpa qui officia deserunt
+                  mollitia animi, id est laborum et dolorum fuga. Et harum
+                  quidem rerum facilis est et expedita distinctio. Nam libero
+                  tempore, cum soluta nobis est eligendi optio cumque nihil
+                  impedit quo minus id quod maxime placeat facere possimus,
+                  omnis voluptas assumenda est, omnis dolor repellendus.
+                  Temporibus autem quibusdam et aut officiis debitis aut rerum
+                  necessitatibus saepe eveniet ut et voluptates repudiandae sint
+                  et molestiae non recusandae. Itaque earum rerum hic tenetur a
+                  sapiente delectus, ut aut reiciendis voluptatibus maiores
+                  alias consequatur aut perferendis doloribus asperiores
+                  repellat
+                </p>
               </div>
             </div>
           </main>

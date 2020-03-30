@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  font-size: 19px;
+  font-size: 18px;
 }
 ul {
   list-style-type: none;
@@ -17,8 +17,10 @@ ul li {
   padding: 0 4px;
 }
 header {
-  position: relative;
+  z-index: 3;
+  position: fixed;
   width: 100%;
+  max-width: 1300px;
   border-bottom: 2px solid #408f9d;
   display: flex;
   flex-direction: row;
@@ -33,11 +35,11 @@ header {
   background-color: rgb(119, 135, 153);
 }
 header ul {
-  margin-top: 10px;
+  margin: 10px;
   list-style-type: none;
 }
 header ul li {
-  font-size: 19px;
+  font-size: 17px;
   display: inline-block;
   padding: 0 10px;
   color: white;
@@ -51,12 +53,13 @@ header ul li:hover {
   color: rgb(249, 255, 160);
 }
 .TmtLogo {
+  /*box-shadow: 0px 0px 10px black;*/
   background-color: white;
-  border: 1px solid #408f9d;
+  /*border: 1px solid #408f9d;*/
   position: absolute;
   margin-left: 10px;
   padding: 5px;
-  margin-top: 5px;
+  margin-top: 15px;
   width: 100px;
 }
 .content {
@@ -67,7 +70,7 @@ header ul li:hover {
   background-image: url("./images/jumbotron2.jpg");
   background-size: cover;
   background-position: bottom;
-  position: absolute;
+  position: fixed;
   z-index: -1;
   width: 100%;
   height: 500px;
@@ -76,7 +79,17 @@ header ul li:hover {
   justify-content: center;
   /*height: 100vh;*/
 }
+.jumbotronText {
+  margin-top: -140px;
+  font-family: Times;
+  font-size: 3rem;
+  color: rgb(249, 255, 160);
+  text-align: center;
+  font-weight: bolder;
+  text-shadow: 0 3px 5px black;
+}
 footer {
+  box-shadow: 0px 0px 5px black;
   background-color: #408f9d;
   padding: 5px;
   min-height: 100px;
@@ -89,15 +102,34 @@ footer {
 .defaultIcons1 {
   width: 25px;
 }
-.HomeDiv {
+.HomeDiv,
+.AboutUsDiv,
+.ProductsDiv,
+.ServicesDiv {
   padding: 5px;
   padding-top: 300px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
+.AboutUsDiv,
+.ProductsDiv,
+.ServicesDiv {
+  display: none;
+}
+.AboutUsContent,
+.ProductsContent,
+.ServicesContent {
+  box-shadow: 0px 0px 5px black;
+  padding: 5px;
+  background-color: white;
+  width: 100%;
+  text-align: justify;
+  min-height: 60vh;
+}
 .IntroDiv {
-  box-shadow: 0px 0px 10px black;
+  box-shadow: 0px 0px 5px black;
   color: white;
   padding: 5px;
   background-color: black;
@@ -107,7 +139,7 @@ footer {
   min-height: 60vh;
 }
 .FoundersDiv {
-  box-shadow: 0px 0px 10px black;
+  box-shadow: 0px 0px 5px black;
   width: 38%;
   min-height: 60vh;
   background-color: rgb(179, 233, 235);
@@ -115,13 +147,149 @@ footer {
   text-align: center;
 }
 .FoundersDiv table {
-  min-height: 300px;
+  height: 200px;
   width: 100%;
-  border-spacing: 10px;
+  border-spacing: 5px;
 }
 .FoundersDiv table tbody tr #FounderPhoto1 {
   background-color: white;
+  background-image: url("./images/TheodorePhoto.jpg");
+  background-size: cover;
+  background-position: top;
 }
 .FoundersDiv table tbody tr #FounderPhoto2 {
   background-color: white;
+  background-color: white;
+  background-image: url("./images/MohammedPhoto3.jpg");
+  background-size: cover;
+  background-position: left top;
+}
+.MenuIcon {
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 10px;
+  position: absolute;
+  z-index: 4;
+}
+
+#nav-toggle {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+}
+
+#nav-toggle {
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: black;
+  position: absolute;
+  display: block;
+  content: "";
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  transition: all 300ms ease-in-out;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+#HamburgerMenu {
+  display: none;
+}
+.MainMenu {
+  margin: auto;
+  position: fixed;
+  z-index: 4;
+  top: 42px;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  display: none;
+}
+.MainMenu table {
+  margin: 10px;
+}
+.MainMenu table tbody tr td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  header {
+    height: 40px;
+  }
+  .jumbotronText {
+    font-size: 2.5rem;
+  }
+  .TmtLogo {
+    border: 1px solid #408f9d;
+  }
+  .wrapper {
+    width: 100%;
+    padding: 0;
+  }
+  .headerBackground {
+    background-color: white;
+  }
+  #HamburgerMenu {
+    display: block;
+  }
+  .FoundersDiv {
+    width: 100%;
+  }
+  .HomeDiv {
+    display: block;
+  }
+  .AboutUsDiv,
+  .ProductsDiv,
+  .ServicesDiv {
+    display: none;
+  }
+  .AboutUsContent,
+  .ProductsContent,
+  .ServicesContent {
+    box-shadow: 0px 0px 5px black;
+    padding: 5px;
+    background-color: white;
+    width: 95%;
+    margin: auto;
+    text-align: justify;
+    min-height: 60vh;
+  }
+  .IntroDiv {
+    background-color: white;
+    color: black;
+    opacity: 1;
+    width: 95%;
+    margin: auto;
+  }
+  .RegularMenu {
+    display: none;
+  }
 }
