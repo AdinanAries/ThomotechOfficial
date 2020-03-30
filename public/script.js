@@ -80,6 +80,11 @@ $(document).ready(function() {
   });
 });
 $(document).ready(function() {
+  $(".OrderNowBtn").click(function(event) {
+    showServices();
+  });
+});
+$(document).ready(function() {
   $("#HamburgerMenu").click(function(event) {
     ToggleMenuDisplay();
   });

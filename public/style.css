@@ -125,18 +125,25 @@ footer {
   padding: 5px;
   background-color: white;
   width: 100%;
-  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   min-height: 60vh;
+  border-radius: 10px;
 }
 .IntroDiv {
+  position: relative;
   box-shadow: 0px 0px 5px black;
   color: white;
-  padding: 5px;
-  background-color: black;
-  opacity: 0.7;
+
   width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: justify;
   min-height: 60vh;
+  border-radius: 10px;
 }
 .FoundersDiv {
   box-shadow: 0px 0px 5px black;
@@ -145,11 +152,12 @@ footer {
   background-color: rgb(179, 233, 235);
   color: darkolivegreen;
   text-align: center;
+  border-radius: 10px;
 }
 .FoundersDiv table {
   height: 200px;
   width: 100%;
-  border-spacing: 5px;
+  /*border-spacing: 5px;*/
 }
 .FoundersDiv table tbody tr #FounderPhoto1 {
   background-color: white;
@@ -239,8 +247,72 @@ footer {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
+.ServicesImage {
+  width: 90%;
+  margin: auto;
+  opacity: 0.6;
+}
+.paymentsForm fieldset {
+  color: #408f9d;
+  border: 1px solid #408f9d;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: rgb(211, 243, 253);
+  max-width: 700px;
+  margin: auto;
+}
+.paymentsForm fieldset input {
+  max-width: 500px;
+  width: 95%;
+  margin: 5px 0;
+  border: 0;
+  border-radius: 4px;
+  padding: 5px;
+}
+.paymentsForm fieldset input[type="checkbox"] {
+  width: auto;
+}
+.paymentsForm fieldset textarea {
+  max-width: 500px;
+  width: 95%;
+  margin: 5px 0;
+  border: 0;
+  border-radius: 4px;
+  padding: 5px;
+  height: 130px;
+}
+.submitPaymentBtn {
+  background-color: darkslateblue;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  border: 0;
+  margin: 5px;
+}
+.OrderNowBtn {
+  background-color: #408f9d;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  border: 0;
+  margin: 10px;
+}
+#introBackground {
+  opacity: 0.7;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: black;
+  border-radius: 10px;
+}
 @media only screen and (max-width: 700px) {
+  #introBackground {
+    display: none;
+  }
+  .FoundersDiv table tbody tr td {
+    width: 50%;
+  }
   header {
     height: 40px;
   }
@@ -261,7 +333,13 @@ footer {
     display: block;
   }
   .FoundersDiv {
-    width: 100%;
+    width: 97%;
+    margin: auto;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 5px;
   }
   .HomeDiv {
     display: block;
@@ -277,16 +355,18 @@ footer {
     box-shadow: 0px 0px 5px black;
     padding: 5px;
     background-color: white;
-    width: 95%;
+    width: 97%;
     margin: auto;
     text-align: justify;
     min-height: 60vh;
   }
   .IntroDiv {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     background-color: white;
     color: black;
     opacity: 1;
-    width: 95%;
+    width: 97%;
     margin: auto;
   }
   .RegularMenu {
