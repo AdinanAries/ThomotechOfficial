@@ -329,7 +329,6 @@ input[type="radio"]:checked {
   margin: 4px;
 }
 .paymentsForm fieldset textarea {
-  max-width: 500px;
   width: 95%;
   margin: 5px 0;
   border: 0;
