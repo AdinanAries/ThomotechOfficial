@@ -321,7 +321,11 @@ footer {
     height: 40px;
   }
   .jumbotronText {
+    margin-top: 0;
     font-size: 2.5rem;
+  }
+  .jumbotron {
+    height: 400px;
   }
   .TmtLogo {
     border: 1px solid #408f9d;
@@ -337,7 +341,7 @@ footer {
     display: block;
   }
   .FoundersDiv {
-    width: 97%;
+    width: 99%;
     margin: auto;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -370,7 +374,7 @@ footer {
     background-color: white;
     color: black;
     opacity: 1;
-    width: 97%;
+    width: 99%;
     margin: auto;
   }
   .RegularMenu {
