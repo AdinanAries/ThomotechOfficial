@@ -352,6 +352,7 @@ input[type="radio"]:checked {
   margin: 5px;
 }
 .OrderNowBtn {
+  font-size: 14px;
   background-color: #408f9d;
   color: white;
   padding: 15px;
