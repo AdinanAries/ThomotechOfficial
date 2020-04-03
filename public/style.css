@@ -432,6 +432,7 @@ input[type="radio"]:checked {
   .AboutUsDiv,
   .ProductsDiv,
   .ServicesDiv {
+    margin: 0;
     display: none;
   }
   .AboutUsContent,
