@@ -125,6 +125,7 @@ footer {
 .ProductsDiv,
 .ServicesDiv {
   display: none;
+  margin-left: -10px;
 }
 .AboutUsContent,
 .ProductsContent,
