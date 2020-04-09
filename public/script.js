@@ -7,6 +7,7 @@ function showAboutUs() {
   document.getElementById("Home").style.display = "none";
   document.getElementById("Products").style.display = "none";
   document.getElementById("Services").style.display = "none";
+  $("html, body").animate({ scrollTop: 0 }, "fast");
 }
 function showHome() {
   document.getElementById("AboutLink").classList.remove("active");
@@ -19,6 +20,7 @@ function showHome() {
   else document.getElementById("Home").style.display = "block";
   document.getElementById("Products").style.display = "none";
   document.getElementById("Services").style.display = "none";
+  $("html, body").animate({ scrollTop: 0 }, "fast");
 }
 function showServices() {
   document.getElementById("AboutLink").classList.remove("active");
@@ -29,6 +31,7 @@ function showServices() {
   document.getElementById("Home").style.display = "none";
   document.getElementById("Products").style.display = "none";
   document.getElementById("Services").style.display = "block";
+  $("html, body").animate({ scrollTop: 0 }, "fast");
 }
 function showProducts() {
   document.getElementById("AboutLink").classList.remove("active");
@@ -39,6 +42,7 @@ function showProducts() {
   document.getElementById("Home").style.display = "none";
   document.getElementById("Products").style.display = "block";
   document.getElementById("Services").style.display = "none";
+  $("html, body").animate({ scrollTop: 0 }, "fast");
 }
 document.querySelector(".MainMenu").style.display = "none";
 function ToggleMenuDisplay() {
