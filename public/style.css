@@ -90,14 +90,14 @@ header ul li:hover {
 .jumbotronText {
   margin-top: -140px;
   font-family: Times;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: rgb(249, 255, 160);
   text-align: center;
   font-weight: bolder;
-  text-shadow: 0 3px 5px black;
+  text-shadow: 0 3px 3px black;
 }
 footer {
-  box-shadow: 0px 0px 5px black;
+  box-shadow: 0px 0px 3px black;
   background-color: #408f9d;
   padding: 5px;
   min-height: 100px;
@@ -115,7 +115,7 @@ footer {
 .ProductsDiv,
 .ServicesDiv {
   padding: 5px;
-  padding-top: 300px;
+  padding-top: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -130,7 +130,7 @@ footer {
 .AboutUsContent,
 .ProductsContent,
 .ServicesContent {
-  box-shadow: 0px 0px 5px black;
+  box-shadow: 0px 0px 3px black;
   padding: 5px;
   background-color: white;
   width: 100%;
@@ -139,29 +139,28 @@ footer {
   justify-content: center;
   text-align: center;
   min-height: 60vh;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 .IntroDiv {
   position: relative;
-  box-shadow: 0px 0px 5px black;
-  color: white;
-
+  box-shadow: 0px 0px 3px black;
+  background-color: white;
   width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: justify;
   min-height: 60vh;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 .FoundersDiv {
-  box-shadow: 0px 0px 5px black;
-  width: 38%;
+  box-shadow: 0px 0px 3px black;
+  width: 39%;
   min-height: 60vh;
-  background-color: rgb(179, 233, 235);
-  color: darkolivegreen;
+  background-color: rgb(211, 250, 253);
+  color: tomato;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 .FoundersDiv table {
   height: 200px;
@@ -356,7 +355,7 @@ input[type="radio"]:checked {
   font-size: 14px;
   background-color: #408f9d;
   color: white;
-  padding: 15px;
+  padding: 10px;
   border-radius: 4px;
   border: 0;
   margin: auto;
@@ -399,7 +398,7 @@ input[type="radio"]:checked {
   }
   .jumbotronText {
     margin-top: 0;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .jumbotron {
     height: 400px;
