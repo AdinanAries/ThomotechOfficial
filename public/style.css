@@ -435,6 +435,9 @@ input[type="radio"]:checked {
     min-height: 390px;
     text-align: center;
   }
+  #newsLetterForm {
+    height: auto;
+  }
   #introBackground {
     display: none;
   }
