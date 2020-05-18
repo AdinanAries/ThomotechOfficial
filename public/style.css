@@ -393,7 +393,45 @@ input[type="radio"]:checked {
   background-color: black;
   border-radius: 10px;
 }
+#newsLetterForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#newsLetterForm div {
+  background-color: rgb(235, 124, 33);
+  border-radius: 7px;
+}
+#newsLetterForm input {
+  border: none;
+  height: 50px;
+  text-align: center;
+  font-size: 14px;
+}
+#newLetterSubmit {
+  background-color: rgb(189, 90, 9) !important;
+  margin: 3px;
+  width: 100px !important;
+  color: white;
+  margin-left: -5px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+#newLetterEmailFld {
+  background-color: white !important;
+  margin: 3px;
+  width: 200px;
+  margin-right: 0;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
 @media only screen and (max-width: 700px) {
+  footer {
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 330px;
+    text-align: center;
+  }
   #introBackground {
     display: none;
   }
