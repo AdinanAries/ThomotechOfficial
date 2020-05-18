@@ -94,10 +94,10 @@ header ul li:hover {
   color: rgb(249, 255, 160);
   text-align: center;
   font-weight: bolder;
-  text-shadow: 0 3px 3px black;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
 }
 footer {
-  box-shadow: 0px 0px 3px black;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
   background-color: #408f9d;
   padding: 5px;
   min-height: 100px;
@@ -130,7 +130,7 @@ footer {
 .AboutUsContent,
 .ProductsContent,
 .ServicesContent {
-  box-shadow: 0px 0px 3px black;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
   padding: 5px;
   background-color: white;
   width: 100%;
@@ -143,7 +143,7 @@ footer {
 }
 .IntroDiv {
   position: relative;
-  box-shadow: 0px 0px 3px black;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
   background-color: white;
   width: 60%;
   display: flex;
@@ -154,7 +154,7 @@ footer {
   border-radius: 4px;
 }
 .FoundersDiv {
-  box-shadow: 0px 0px 3px black;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
   width: 39%;
   min-height: 60vh;
   background-color: rgb(211, 250, 253);
