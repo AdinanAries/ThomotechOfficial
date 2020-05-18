@@ -164,7 +164,7 @@ footer {
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
   width: 39%;
   min-height: 60vh;
-  background-color: rgb(211, 250, 253);
+  background-color: rgb(255, 255, 255);
   color: tomato;
   text-align: center;
   border-radius: 4px;
@@ -394,12 +394,15 @@ input[type="radio"]:checked {
   border-radius: 10px;
 }
 #newsLetterForm {
+  margin: auto;
+  width: fit-content;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  height: 180px;
 }
-#newsLetterForm div {
-  background-color: rgb(235, 124, 33);
+#newsLetterForm #NLInputs {
+  background-color: rgba(255, 255, 255, 0.295);
   border-radius: 7px;
 }
 #newsLetterForm input {
@@ -429,7 +432,7 @@ input[type="radio"]:checked {
   footer {
     flex-direction: column;
     justify-content: space-between;
-    min-height: 330px;
+    min-height: 390px;
     text-align: center;
   }
   #introBackground {
