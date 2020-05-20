@@ -110,9 +110,13 @@ footer {
   min-height: 100px;
   color: white;
   font-size: 15px;
+}
+#footerWrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  max-width: 950px;
+  margin: auto;
 }
 .defaultIcons1 {
   width: 25px;
@@ -399,7 +403,7 @@ input[type="radio"]:checked {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 180px;
+  height: 160px;
 }
 #newsLetterForm #NLInputs {
   background-color: rgba(255, 255, 255, 0.295);
@@ -430,9 +434,11 @@ input[type="radio"]:checked {
 }
 @media only screen and (max-width: 700px) {
   footer {
+  }
+  #footerWrapper {
     flex-direction: column;
     justify-content: space-between;
-    min-height: 390px;
+    min-height: 490px;
     text-align: center;
   }
   #newsLetterForm {
