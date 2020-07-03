@@ -66,6 +66,13 @@ header ul li.active {
   font-weight: bolder;
   color: #ecf00b;
 }
+.navHomeOption {
+  color: rgb(33, 240, 240);
+  margin-right: 20px;
+}
+.navHomeOption:hover {
+  color: #91ff00;
+}
 header ul li:hover {
   color: rgb(216, 140, 0);
 }
