@@ -51,68 +51,68 @@ function ToggleMenuDisplay() {
   let MenuDisplay = document.querySelector(".MainMenu").style.display;
 
   if (MenuDisplay === "none") {
-    document.querySelector(".TmtLogo").style.display = "none";
+    //document.querySelector(".TmtLogo").style.display = "none";
     $(".MainMenu").show("slide", { direction: "left" }, 100);
   } else {
     $(".MainMenu").hide("slide", { direction: "left" }, 100);
-    document.querySelector(".TmtLogo").style.display = "block";
+    //document.querySelector(".TmtLogo").style.display = "block";
   }
 }
 
-$(document).ready(function() {
-  $("#HMBGHomeLink").click(function(event) {
+$(document).ready(function () {
+  $("#HMBGHomeLink").click(function (event) {
     showHome();
     ToggleMenuDisplay();
   });
 });
-$(document).ready(function() {
-  $("#HMBGAboutLink").click(function(event) {
+$(document).ready(function () {
+  $("#HMBGAboutLink").click(function (event) {
     showAboutUs();
     ToggleMenuDisplay();
   });
 });
-$(document).ready(function() {
-  $("#HMBGProductsLink").click(function(event) {
+$(document).ready(function () {
+  $("#HMBGProductsLink").click(function (event) {
     showProducts();
     ToggleMenuDisplay();
   });
 });
-$(document).ready(function() {
-  $("#HMBGServicesLink").click(function(event) {
+$(document).ready(function () {
+  $("#HMBGServicesLink").click(function (event) {
     showServices();
     ToggleMenuDisplay();
   });
 });
-$(document).ready(function() {
-  $(".OrderNowBtn").click(function(event) {
+$(document).ready(function () {
+  $(".OrderNowBtn").click(function (event) {
     showServices();
   });
 });
-$(document).ready(function() {
-  $("#HamburgerMenu").click(function(event) {
+$(document).ready(function () {
+  $("#HamburgerMenu").click(function (event) {
     ToggleMenuDisplay();
   });
 });
-$(document).ready(function() {
-  $("#AboutLink").click(function(event) {
+$(document).ready(function () {
+  $("#AboutLink").click(function (event) {
     showAboutUs();
   });
 });
 
-$(document).ready(function() {
-  $("#HomeLink").click(function(event) {
+$(document).ready(function () {
+  $("#HomeLink").click(function (event) {
     showHome();
   });
 });
 
-$(document).ready(function() {
-  $("#ServicesLink").click(function(event) {
+$(document).ready(function () {
+  $("#ServicesLink").click(function (event) {
     showServices();
   });
 });
 
-$(document).ready(function() {
-  $("#ProductsLink").click(function(event) {
+$(document).ready(function () {
+  $("#ProductsLink").click(function (event) {
     showProducts();
   });
 });

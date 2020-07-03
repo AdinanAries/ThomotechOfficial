@@ -5,6 +5,9 @@
   font-family: sans-serif;
   font-size: 18px;
 }
+body {
+  /*background-color: #e3eaf8;*/
+}
 a {
   text-decoration: none;
   color: #408f9d;
@@ -28,9 +31,8 @@ header {
   z-index: 3;
   position: fixed;
   width: 100%;
-  /*border-bottom: 2px solid #408f9d;*/
-
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+  height: 90px;
+  /*box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);*/
 }
 #headerWrapper {
   display: flex;
@@ -45,8 +47,7 @@ header {
   width: 100%;
   height: 100%;
   z-index: -1;
-  opacity: 0.8;
-  background-color: rgb(119, 135, 153);
+  /*background-color: rgba(45, 61, 77, 0.685);*/
 }
 header ul {
   margin: 10px;
@@ -57,32 +58,33 @@ header ul li {
   display: inline-block;
   padding: 0 10px;
   color: white;
+  font-weight: bolder;
   cursor: pointer;
 }
 header ul li.active {
   font-weight: bolder;
-  color: rgb(249, 255, 160);
+  color: #ecf00b;
 }
 header ul li:hover {
-  color: rgb(249, 255, 160);
+  color: rgb(216, 140, 0);
 }
 .TmtLogo {
   /*box-shadow: 0px 0px 10px black;*/
-  background-color: rgb(255, 255, 255);
   /*border: 1px solid #408f9d;*/
   position: absolute;
   margin-left: 10px;
   /*margin-top: 10px;*/
   padding: 5px;
+  margin-top: 5px;
   width: 140px;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
 }
 .content {
   padding: 10px 0;
   min-height: 60vh;
 }
 .jumbotron {
-  background-image: url("./images/jumbotron2.jpg");
+  background: linear-gradient(rgba(89, 187, 243, 0.712), #9226eb9a),
+    url("./images/jumbotron2.jpg");
   background-size: cover;
   background-position: bottom;
   position: fixed;
@@ -104,7 +106,7 @@ header ul li:hover {
   text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
 }
 footer {
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+  /*box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);*/
   background-color: #408f9d;
   padding: 5px;
   min-height: 100px;
@@ -131,6 +133,11 @@ footer {
   flex-direction: row;
   justify-content: space-between;
 }
+.flexDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 .AboutUsDiv,
 .ProductsDiv,
@@ -141,7 +148,7 @@ footer {
 .AboutUsContent,
 .ProductsContent,
 .ServicesContent {
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+  /*box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);*/
   padding: 5px;
   background-color: white;
   width: 100%;
@@ -154,9 +161,9 @@ footer {
 }
 .IntroDiv {
   position: relative;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+  /*box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);*/
   background-color: white;
-  width: 60%;
+  width: 55%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -165,7 +172,7 @@ footer {
   border-radius: 4px;
 }
 .FoundersDiv {
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+  /*box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);*/
   width: 39%;
   min-height: 60vh;
   background-color: rgb(255, 255, 255);
@@ -451,24 +458,25 @@ input[type="radio"]:checked {
     width: 50%;
   }
   header {
-    height: 40px;
+    height: 50px;
+    box-shadow: none;
   }
   .jumbotronText {
     margin-top: 0;
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
   .jumbotron {
     height: 400px;
   }
   .TmtLogo {
-    /*border: 1px solid #408f9d;*/
+    display: none;
+    margin-top: 0;
   }
   .wrapper {
     width: 100%;
     padding: 0;
   }
   .headerBackground {
-    background-color: white;
   }
   #HamburgerMenu {
     display: block;
@@ -484,6 +492,9 @@ input[type="radio"]:checked {
   }
   .HomeDiv {
     display: block;
+  }
+  .flexDiv {
+    flex-direction: column;
   }
   .AboutUsDiv,
   .ProductsDiv,
