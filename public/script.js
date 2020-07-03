@@ -53,10 +53,10 @@ function ToggleMenuDisplay() {
   if (MenuDisplay === "none") {
     //document.querySelector(".TmtLogo").style.display = "none";
     $(".MainMenu").show("slide", { direction: "left" }, 100);
-    $(".headerBackground").slideDown("fast");
+    //$(".headerBackground").slideDown("fast");
   } else {
     $(".MainMenu").hide("slide", { direction: "left" }, 100);
-    $(".headerBackground").slideUp("fast");
+    //$(".headerBackground").slideUp("fast");
     //document.querySelector(".TmtLogo").style.display = "block";
   }
 }
@@ -120,9 +120,11 @@ $(document).ready(function () {
 });
 
 $(window).scroll(function () {
-  if ($(window).scrollTop() > 200) {
-    $(".headerBackground").slideDown("fast");
-  } else {
-    $(".headerBackground").slideUp("fast");
+  if ($(window).width() > 1000) {
+    if ($(window).scrollTop() > 200) {
+      $(".headerBackground").slideDown("fast");
+    } else {
+      $(".headerBackground").slideUp("fast");
+    }
   }
 });

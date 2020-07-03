@@ -475,6 +475,9 @@ input[type="radio"]:checked {
     height: 50px;
     box-shadow: none;
   }
+  .headerBackground {
+    display: block;
+  }
   .jumbotronText {
     margin-top: 0;
     font-size: 2rem;
