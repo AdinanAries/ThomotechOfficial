@@ -457,6 +457,9 @@ input[type="radio"]:checked {
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
 }
+.footerSeparator {
+  display: none;
+}
 @media only screen and (max-width: 700px) {
   .mobileCallUsBtns {
     display: block;
@@ -525,6 +528,14 @@ input[type="radio"]:checked {
   .ServicesDiv {
     margin: 0;
     display: none;
+  }
+  .footerSeparator {
+    display: block;
+    margin: 5px 20px;
+    border-top: 1px solid rgb(77, 77, 77);
+  }
+  .mobilePadding20 {
+    padding-top: 20px;
   }
   .AboutUsContent,
   .ProductsContent,
