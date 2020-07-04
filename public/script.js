@@ -123,8 +123,10 @@ $(window).scroll(function () {
   if ($(window).width() > 1000) {
     if ($(window).scrollTop() > 200) {
       $(".headerBackground").slideDown("fast");
+      $(".TmtLogo").attr("src", "images/TmtLogo.svg");
     } else {
       $(".headerBackground").slideUp("fast");
+      $(".TmtLogo").attr("src", "images/TmtLogo2.png");
     }
   }
 });
